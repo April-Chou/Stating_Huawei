@@ -28,10 +28,20 @@ public class Question_04 {
 			System.out.println("Please enter an positive intenger: ");
 			int number = sc.nextInt();
 			return (check_positive(number));
-			
+			 
+//			
 			
 		}
 		
 	}
+	
+	//fraction method;
+//	public static int fraction(int j) {
+//		
+//		for(int k=2, k<=j,k++) {
+//			
+//		}
+//
+//	}
 
 }
