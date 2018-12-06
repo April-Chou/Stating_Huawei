@@ -46,10 +46,13 @@ class Animal{
 	}
 }
 
-
+// inter face of jump high
+interface Jump{
+	public abstract void jump();
+}
 
 // son class cat extends animal
-class Cat extends Animal{
+class Cat extends Animal implements Jump{
 	
 //	construction method
 	public Cat() {
@@ -68,6 +71,10 @@ class Cat extends Animal{
 //	catch mouse method 
 	public void catch_mouse() {
 		System.out.println("Catch a mouse!");
+	}
+	
+	public void jump() {
+		System.out.println("Jump High");
 	}
 }
 
@@ -102,6 +109,7 @@ public class Demo_Animal {
 		Cat c1 = new Cat("white", 4);
 		c1.eat();
 		c1.catch_mouse();
+		c1.jump();
 		
 		Dog d1 = new Dog("Yellow", 4);
 		d1.eat();
