@@ -7,24 +7,25 @@ package blackhorse;
  * 3. 要有父类引用指向子类对象
  */
 
-class Animals{
+class Animals {
 	int num = 10;
 
 	public void eat() {
-		
+
 		System.out.println("An animal is Eating");
 	}
 }
 
 // extends继承
-class Cats extends Animals{
+class Cats extends Animals {
 	int num = 20;
+
 	public void eat() {
-		
-		System.out.println("This cat is eatig.....");      //重写了父类的eat方法
+
+		System.out.println("This cat is eatig....."); // 重写了父类的eat方法
 	}
 }
-/*   
+/*
  * 成员变量： 编译看左边（父类），运行看左边（父类）---------父类引用指向子类对象
  * 
  * 成员方法：编译看左边（父类），运行看右边（子类）编译看父类，运行看子类（如果父类没相关方法，编译不会通过，会报错）------动态绑定
@@ -34,19 +35,19 @@ class Cats extends Animals{
  */
 
 public class Demo_Polymorphic {
-	
+
 	public static void main(String[] args) {
 		Cats c1 = new Cats();
 		c1.eat();
 		System.out.println("c1 number is " + c1.num);
-		
-		Animals c2 = new Cats();              //父类引用指向子类对象
+
+		Animals c2 = new Cats(); // 父类引用指向子类对象
 		c2.eat();
 		System.out.println("c2 number is " + c2.num);
-		
+
 		Animal c3 = new Animal();
 		c3.eat();
-		
+
 	}
 
 }
