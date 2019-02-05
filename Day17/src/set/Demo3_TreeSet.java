@@ -8,7 +8,7 @@ import bean.Person;
  * dang 当compare to返回0的时候，集合中只有一个元素
  * dang 当compare to返回正数的时候，集合中怎么存就怎么取
  * dang 当compare to返回负数的时候，集合会倒叙存储
- * er 二叉树，小的存储在左边（负数），大的存储在右边（正数），相等就不存（0）
+ * er 二叉树，小的存储在左边（负数），大的存储在右边（正数），相等就不存（0）-----compareTo
  * 
  */
 
