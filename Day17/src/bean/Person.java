@@ -1,6 +1,6 @@
 package bean;
 
-public class Person {
+public class Person implements Comparable<Person>{
 	private String name;
 	private int age;
 	/**
@@ -89,5 +89,14 @@ public class Person {
 			return false;
 		return true;
 	}
+	/* (non-Javadoc)
+	 * @see java.lang.Comparable#compareTo(java.lang.Object)
+	 */
+	@Override
+	public int compareTo(Person arg0) {
+		// TODO Auto-generated method stub
+		return -1;
+	}
+	
 
 }
