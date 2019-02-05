@@ -89,14 +89,38 @@ public class Person implements Comparable<Person>{
 			return false;
 		return true;
 	}
+//	/* (non-Javadoc)
+//	 * @see java.lang.Comparable#compareTo(java.lang.Object)
+//	 */
+//	@Override
+//	public int compareTo(Person arg0) {
+//		// TODO Auto-generated method stub
+//		int num = this.age -arg0.age;
+//		return num == 0 ? this.name.compareTo(arg0.name) : num;
+//	}
+//	/* (non-Javadoc)
+//	 * @see java.lang.Comparable#compareTo(java.lang.Object)
+//	 */
+//	@Override
+//	public int compareTo(Person o) {
+//		// TODO Auto-generated method stub
+//		int num = this.name.compareTo(o.name);
+//		return num == 0 ? this.age - o.age : num;
+//	}
 	/* (non-Javadoc)
 	 * @see java.lang.Comparable#compareTo(java.lang.Object)
 	 */
 	@Override
-	public int compareTo(Person arg0) {
+	public int compareTo(Person o) {
 		// TODO Auto-generated method stub
-		return -1;
+		int length = this.name.length() - o.name.length();
+		int num = length == 0 ? this.name.compareTo(o.name) : length;
+		return num == 0 ? this.age - o.age : length;
 	}
+	
+	
+	
+	
 	
 
 }
