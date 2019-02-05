@@ -17,11 +17,15 @@ public class Test4 {
 		list.add("geralt");
 		list.add("geralt");
 		
+		System.out.println(list);
+		
 
 	}
-	
+//	
 //	public static int sort(ArrayList<String> list) {
-//		TreeSet<String> ts = new TreeSet<>(new Comparator<String>());
+//		TreeSet<String> ts = new TreeSet<>(new Comparator<String>() {
+//			
+//		}
 //		return 0;
 //	}
 
